@@ -1,15 +1,28 @@
 {
-  "name": "amazon-kinesis-video-streams-producer",
-  "version": "1.0.0",
+  "name": "amazon-kinesis-video-streams-producer-js-demo",
+  "version": "0.0.0",
+  "private": true,
   "description": "",
-  "main": "index.js",
-  "scripts": {
-    "build": "tsc && webpack",
-    "start": "ts-node --files src/index.ts",
-    "serve": "webpack-dev-server"
+  "homepage": "https://github.com/esnya/amazon-kinesis-video-streams-producer-js-demo#readme",
+  "bugs": {
+    "url": "https://github.com/esnya/amazon-kinesis-video-streams-producer-js-demo/issues"
   },
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/esnya/amazon-kinesis-video-streams-producer-js-demo.git"
+  },
   "license": "MIT",
+  "author": "esnya",
+  "main": "lib/index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.610.0"
+  },
   "devDependencies": {
     "@types/html-webpack-plugin": "^3.2.1",
     "@types/node": "^13.5.1",
@@ -22,8 +35,5 @@
     "webpack": "^4.41.5",
     "webpack-cli": "^3.3.10",
     "webpack-dev-server": "^3.10.1"
-  },
-  "dependencies": {
-    "aws-sdk": "^2.610.0"
   }
 }
