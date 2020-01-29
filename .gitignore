@@ -1,3 +1,6 @@
+# Local Config
+aws-config.ts
+
 # Logs
 logs
 *.log

@@ -1,0 +1,47 @@
+{
+  "http": {
+    "requestUri": "/putMedia",
+    "method": "POST"
+  },
+  "input": {
+    "type": "structure",
+    "required": [
+      "FragmentTimecodeType"
+    ],
+    "members": {
+      "StreamName": {
+        "location": "header",
+        "locationName": "x-amzn-stream-name"
+      },
+      "StreamARN": {
+        "location": "header",
+        "locationName": "x-amzn-stream-arn"
+      },
+      "FragmentTimecodeType": {
+        "location": "header",
+        "locationName": "x-amzn-fragment-timecode-type"
+      },
+      "ProducerStartTimestamp": {
+        "location": "header",
+        "locationName": "x-amzn-producer-start-timestamp"
+      },
+      "ContentType": {
+        "location": "header",
+        "locationName": "Content-Type"
+      },
+      "Body": {
+        "streaming": true,
+        "type": "blob"
+      }
+    },
+    "payload": "Body"
+  },
+  "output": {
+    "type": "structure",
+    "members": {
+      "Payload": {
+      }
+    },
+    "payload": "Payload"
+  }
+}
